@@ -28,3 +28,14 @@
 Выбираем "Graphic Install". Выбираем язык, вашу "локацию" и раскладку клавиатуры.
 
 Далее в "Configuration the network" выбираем enp0s8 (потом объясню почему): ![{230FC1DC-1AA6-442F-888B-CE22A3D2A224}](https://github.com/user-attachments/assets/34d63528-1f79-439b-85dc-fe47b43a85c5)
+
+Настроим "Configuration the network" следующим образом: ![{52ED3226-22A7-444B-859A-AD7F7CE7DD8A}](https://github.com/user-attachments/assets/5ce3cbdf-a387-496d-81a6-4b606a52dc45)  ![{646B8B20-186B-4C3D-9ED4-5249EB42A455}](https://github.com/user-attachments/assets/fed99cc6-4cab-412f-96ad-3ce551f12bb3)  ![{AAC91043-B776-4C16-AD4B-10AB4DC025A9}](https://github.com/user-attachments/assets/f316a1c8-5feb-40e9-a9d0-8ba5de2e0bca)
+
+Указывает имя хоста: ![{9B1DAFB5-076E-4644-A0E2-063D3A1EBFD5}](https://github.com/user-attachments/assets/445e3dd9-6145-4fc0-bde5-8f58a36a1af8)
+
+(Домен можно пропустить)
+
+Указываем пароль для рута: ![{31E271DF-ECA9-4511-A7F3-1BEEEBB18051}](https://github.com/user-attachments/assets/093d2b26-fee7-4382-9111-ad97297507a3)
+
+Указываем имя юзера, и пароль для этого юзера. ![{52F6640A-5235-4C6B-A8E6-BE72DE5DF3CF}](https://github.com/user-attachments/assets/42d99ea5-80e8-481f-b90d-4327bf0cea96)  ![{91FD77BC-CCB1-425B-A0E3-C748865F49E6}](https://github.com/user-attachments/assets/201e3192-0152-4caa-9a76-47aa3898e967)  (пароль юзера точно не совпадает с паролем рута:))
+

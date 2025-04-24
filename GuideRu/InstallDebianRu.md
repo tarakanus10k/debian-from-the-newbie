@@ -70,3 +70,8 @@
 - "vg-var-tmp", 2GB
 - "vg-opt", 2GB
 - "vg-tmp", 2GB
+
+В итоге должно получиться следующее:  
+![{EC86DA2C-C3BC-49FE-AF3A-EA46ABA70E19}](https://github.com/user-attachments/assets/4c9f79ee-cd2e-4cbe-a417-05af7e40f4fc)
+
+Теперь, как для раздела "/boot" настроим для каждого раздела файловую систему (для всех ext4) и точку монтирования (смотрим на название разделов). В итоге должно получиться следующее: ![{34315B2E-F6F3-43D1-82CF-8FFBD4155206}](https://github.com/user-attachments/assets/c8ffa21d-5e90-4f79-926b-693f4683b764)

@@ -44,4 +44,9 @@
 
 Теперь самое интересное - разметка диска. Здесь желательно быть осторожным, так как мы будем размечивать диск вручную.
 
-Выбираем наш диск: ![{8F3C5397-D8FD-4A85-9963-B9119336A016}](https://github.com/user-attachments/assets/95ca8da7-aa3c-4ac3-bb80-51a229b731ad)
+Выбираем наш диск:  
+![{8F3C5397-D8FD-4A85-9963-B9119336A016}](https://github.com/user-attachments/assets/95ca8da7-aa3c-4ac3-bb80-51a229b731ad)
+
+Создаем новую пустую разметку:  
+![{42D13A43-545A-4FA2-ADA2-A4D3F64E740D}](https://github.com/user-attachments/assets/c5dc81f1-1dc6-4b5c-91a9-4ea9f451ade5)
+

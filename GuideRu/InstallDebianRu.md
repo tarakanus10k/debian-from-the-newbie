@@ -25,3 +25,6 @@
 Указываем путь до нашего iso файла, монтируем и перезапускаем машину.
 
 ## 3. Установка Debian
+Выбираем "Graphic Install". Выбираем язык, вашу "локацию" и раскладку клавиатуры.
+
+Далее в "Configuration the network" выбираем enp0s8 (потом объясню почему): ![{230FC1DC-1AA6-442F-888B-CE22A3D2A224}](https://github.com/user-attachments/assets/34d63528-1f79-439b-85dc-fe47b43a85c5)

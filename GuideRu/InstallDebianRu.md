@@ -15,3 +15,6 @@
 ![{02B6DF0B-422A-4912-B5D7-1197467F3F07}](https://github.com/user-attachments/assets/4038e77c-c0ad-49dc-9edb-293d4f8edbd2)
 
 Включаем DHCP сервер и сохраняем изменения.
+
+Переходим в настройки созданой машины и там переходим во вкладку "Network". Делаем следующие настройки: ![{5810BDB7-E402-4ED2-BDC3-7CA91A46EA0A}](https://github.com/user-attachments/assets/238548a7-6f23-44dd-862b-083fc03b5ade)  ![{0464D68B-6647-48FF-B29C-01DF87F3FF0D}](https://github.com/user-attachments/assets/87fe03f5-29e3-451b-988f-1d4c5ac39750)
+

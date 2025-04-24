@@ -50,3 +50,5 @@
 Создаем новую пустую разметку:  
 ![{42D13A43-545A-4FA2-ADA2-A4D3F64E740D}](https://github.com/user-attachments/assets/c5dc81f1-1dc6-4b5c-91a9-4ea9f451ade5)
 
+Для начала создадим раздел "/boot". Нажимаеи на "create new partition", выделяем место для этого раздела (1 GB), тип раздела выбираем primary, создаем раздел в начале диска. В "mount point" выбираем "/boot" и можем заканчиваь с этим разделом. Должно получиться следующее: ![{70E053E8-38EC-4B5D-B779-5B692EF9A35B}](https://github.com/user-attachments/assets/b22f2880-3db0-49d9-b00f-a0c5344b9d35)
+

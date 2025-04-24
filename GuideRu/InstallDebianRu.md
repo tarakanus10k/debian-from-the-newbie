@@ -58,4 +58,7 @@
 Выбираем устройство для группы: ![{68648589-9A9B-453C-9536-F2E442E21C70}](https://github.com/user-attachments/assets/3a27fd97-9e32-4456-98a3-b9a104ba43c2)  
 ![{DA873D96-1271-4FC6-9EB2-38F0E431537B}](https://github.com/user-attachments/assets/3c1a8af0-7536-4961-a4c2-bf32e1a8a89a)
 
-Теперь можем приступить к созданию логических разделов. Нажимаем на "create logical volume". Задаем имя нашему разделу, например "vg-home": ![{920E0331-2EB1-47A6-85F9-C12D282DA30C}](https://github.com/user-attachments/assets/71bc0688-4f32-4ed0-a219-2f0443638f80)
+Теперь можем приступить к созданию логических разделов. Нажимаем на "create logical volume". Задаем имя нашему разделу, например "vg-home":  
+![{920E0331-2EB1-47A6-85F9-C12D282DA30C}](https://github.com/user-attachments/assets/71bc0688-4f32-4ed0-a219-2f0443638f80)
+
+Выделяем память под логический раздел: ![{607FD455-7240-43DF-9D97-4357BA88A560}](https://github.com/user-attachments/assets/28d3e73b-7dc6-4406-b89e-8344f505c6b9)

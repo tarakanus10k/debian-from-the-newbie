@@ -50,5 +50,12 @@
 Создаем новую пустую разметку:  
 ![{42D13A43-545A-4FA2-ADA2-A4D3F64E740D}](https://github.com/user-attachments/assets/c5dc81f1-1dc6-4b5c-91a9-4ea9f451ade5)
 
-Для начала создадим раздел "/boot". Нажимаеи на "create new partition", выделяем место для этого раздела (1 GB), тип раздела выбираем primary, создаем раздел в начале диска. В "mount point" выбираем "/boot" и можем заканчиваь с этим разделом. Должно получиться следующее: ![{70E053E8-38EC-4B5D-B779-5B692EF9A35B}](https://github.com/user-attachments/assets/b22f2880-3db0-49d9-b00f-a0c5344b9d35)
+Для начала создадим раздел "/boot". Нажимаеи на "create new partition", выделяем место для этого раздела (1 GB), тип раздела выбираем primary, создаем раздел в начале диска. В "mount point" выбираем "/boot" и можем заканчиваь с этим разделом. Должно получиться следующее:  
+![{70E053E8-38EC-4B5D-B779-5B692EF9A35B}](https://github.com/user-attachments/assets/b22f2880-3db0-49d9-b00f-a0c5344b9d35)
 
+Далее выбираеи "configure the Logical Volume Manager" и потом нажимаем "create volume group". Задаем имя нашей группе: ![{873D5DE8-5840-4B49-98F3-FAEDF3B3C184}](https://github.com/user-attachments/assets/32ecb3d7-eaa1-4a00-a246-2065f0bd180c)
+
+Выбираем устройство для группы: ![{68648589-9A9B-453C-9536-F2E442E21C70}](https://github.com/user-attachments/assets/3a27fd97-9e32-4456-98a3-b9a104ba43c2)  
+![{DA873D96-1271-4FC6-9EB2-38F0E431537B}](https://github.com/user-attachments/assets/3c1a8af0-7536-4961-a4c2-bf32e1a8a89a)
+
+Теперь можем приступить к созданию логических разделов. Нажимаем на "create logical volume". Задаем имя нашему разделу, например "vg-home": ![{920E0331-2EB1-47A6-85F9-C12D282DA30C}](https://github.com/user-attachments/assets/71bc0688-4f32-4ed0-a219-2f0443638f80)

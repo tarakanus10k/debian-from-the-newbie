@@ -62,3 +62,11 @@
 ![{920E0331-2EB1-47A6-85F9-C12D282DA30C}](https://github.com/user-attachments/assets/71bc0688-4f32-4ed0-a219-2f0443638f80)
 
 Выделяем память под логический раздел: ![{607FD455-7240-43DF-9D97-4357BA88A560}](https://github.com/user-attachments/assets/28d3e73b-7dc6-4406-b89e-8344f505c6b9)
+
+И такую процедуру проделываем для следующих разделов:
+- "vg-root", 4GB
+- "vg-var", 2GB
+- "vg-var-log", 2GB
+- "vg-var-tmp", 2GB
+- "vg-opt", 2GB
+- "vg-tmp", 2GB

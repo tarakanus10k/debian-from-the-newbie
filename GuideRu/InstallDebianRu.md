@@ -11,7 +11,7 @@
 
 Далее указываем место для хранения жесткого диска машины: ![{E35EF6A4-65E1-4103-8CF2-C90731AB7257}](https://github.com/user-attachments/assets/a43d8588-da73-4adf-ad88-9b32c99df06a)
 
-Создаем машину и переходим в "Tools/Network". Там нажимаем на "Create" и получаем следующее (смотрим на VirtualBox Host-Only Enthernet Adapter): 
+Создаем машину и переходим в "Tools/Network". Там нажимаем на "Create" и получаем следующее (смотрим на VirtualBox Host-Only Enthernet Adapter):__
 ![{02B6DF0B-422A-4912-B5D7-1197467F3F07}](https://github.com/user-attachments/assets/4038e77c-c0ad-49dc-9edb-293d4f8edbd2)
 
 Включаем DHCP сервер и сохраняем изменения.

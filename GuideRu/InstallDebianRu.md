@@ -29,7 +29,9 @@
 
 Далее в "Configuration the network" выбираем enp0s8 (потом объясню почему): ![{230FC1DC-1AA6-442F-888B-CE22A3D2A224}](https://github.com/user-attachments/assets/34d63528-1f79-439b-85dc-fe47b43a85c5)
 
-Настроим "Configuration the network" следующим образом: ![{52ED3226-22A7-444B-859A-AD7F7CE7DD8A}](https://github.com/user-attachments/assets/5ce3cbdf-a387-496d-81a6-4b606a52dc45)  ![{646B8B20-186B-4C3D-9ED4-5249EB42A455}](https://github.com/user-attachments/assets/fed99cc6-4cab-412f-96ad-3ce551f12bb3)  ![{AAC91043-B776-4C16-AD4B-10AB4DC025A9}](https://github.com/user-attachments/assets/f316a1c8-5feb-40e9-a9d0-8ba5de2e0bca)
+Настроим "Configuration the network" следующим образом: ![{CC144728-0981-44A1-A3C2-E1B3C39B9902}](https://github.com/user-attachments/assets/69e9e3bd-b081-45a9-b781-0ca663000284)  
+![{74E2EF95-0A33-4182-A127-F3682D736CE0}](https://github.com/user-attachments/assets/5d0fb0e7-8738-41c0-9b32-9425ffb43c37)  
+![{42B3001F-DEEE-4042-A23B-B2A38B6C8D75}](https://github.com/user-attachments/assets/de6290d7-f935-4983-9e12-32aedd22fffc)
 
 Указывает имя хоста:  
 ![{9B1DAFB5-076E-4644-A0E2-063D3A1EBFD5}](https://github.com/user-attachments/assets/445e3dd9-6145-4fc0-bde5-8f58a36a1af8)

@@ -8,3 +8,5 @@
 
 Изменяем этот файл следующим образом:  
 ![{1CD6DDF7-E719-434E-BBDE-34B9EFD19CEC}](https://github.com/user-attachments/assets/cae1c80f-7560-41fc-acf8-7611cfa4d429)
+
+И перезапускаем сервис после данных изменений командой "systemctl restart networking"

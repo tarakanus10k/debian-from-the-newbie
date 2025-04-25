@@ -4,10 +4,17 @@
 
 Для начала воспользуемся командой ip a, чтобы посмотреть все сетевые интерфейсы: ![{7683B33E-4EC4-4C31-8991-D25BB1FFEDDD}](https://github.com/user-attachments/assets/b216b7c7-4489-419c-97b3-777a684b823c)
 
-Для настройки интерфейсов нужно воспользоваться "nano /etc/network/interfaces": ![{EC9DD3C1-0C7B-43A7-97F4-4A4E93987593}](https://github.com/user-attachments/assets/d980de4e-4c49-47c9-a82c-36f8ecdfd1d6)
+Для настройки интерфейсов нужно воспользоваться `nano /etc/network/interfaces`: ![{EC9DD3C1-0C7B-43A7-97F4-4A4E93987593}](https://github.com/user-attachments/assets/d980de4e-4c49-47c9-a82c-36f8ecdfd1d6)
 
 Изменяем этот файл следующим образом:  
 ![{E574894B-EBF2-4F2E-86EC-5C95829E4FA2}](https://github.com/user-attachments/assets/607c85c4-c670-4a7f-854e-a7993f666434)
 
-И перезапускаем сервис после данных изменений командой "systemctl restart networking".
+И перезапускаем сервис после данных изменений командой `systemctl restart networking`.
 
+## 2. Настройка зеркала
+Воспользуемся командой `nano /etc/apt/sources.list`
+
+## 3. Установка SSH
+SSH нам нужен для того, грубо говоря, чтобы удаленно управлять сервером (т.е. к нашей ВМ) по ssh. Стоит сказать, что этот протокол обеспечивает не просто подклюючение, а безопасное подключение.
+
+Итак, для установки ssh воспользуемся командой `apt install openssh-server -y`. 

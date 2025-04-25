@@ -12,13 +12,12 @@
 Далее указываем место для хранения жесткого диска машины: ![{E35EF6A4-65E1-4103-8CF2-C90731AB7257}](https://github.com/user-attachments/assets/a43d8588-da73-4adf-ad88-9b32c99df06a)
 
 Создаем машину и переходим в "Tools/Network". Там нажимаем на "Create" и получаем следующее (смотрим на VirtualBox Host-Only Enthernet Adapter):  
-![{02B6DF0B-422A-4912-B5D7-1197467F3F07}](https://github.com/user-attachments/assets/4038e77c-c0ad-49dc-9edb-293d4f8edbd2)
+![{D7E83F8C-4090-46CB-9ED4-A2B5C96155F7}](https://github.com/user-attachments/assets/8ca1db09-44bc-4e36-a529-6e50b0506ef4)
 
 Включаем DHCP сервер и сохраняем изменения.
 
-Переходим в настройки созданой машины и там переходим во вкладку "Network". Делаем следующие настройки: ![{09C6082A-58DF-4F90-AFC5-A2304E6F041B}](https://github.com/user-attachments/assets/ff6a5fc9-8ecb-42d9-a29f-56a2acc17c18)  
-![{0464D68B-6647-48FF-B29C-01DF87F3FF0D}](https://github.com/user-attachments/assets/87fe03f5-29e3-451b-988f-1d4c5ac39750)
-
+Переходим в настройки созданой машины и там переходим во вкладку "Network". Делаем следующие настройки: ![{D5235A89-D469-43BB-BA5C-0710B5CADEE2}](https://github.com/user-attachments/assets/22c78c16-90fc-4a89-b8c1-e57cba86fdef)  
+![{7EC4E036-D58B-4175-9B99-CA488C1C275E}](https://github.com/user-attachments/assets/a535cd95-6168-43f3-bdc8-9ab2b4145a8d)
 ("Host-Only adapter" нам нужен для того, чтобы основная машина могла иметь возможность подключиться к виртуальной машине и наоборот)
 
 Сохраняем изменения и запускаем машину. Выплывет следующее окно: ![{AD082118-426E-4B5D-86D6-AA31BB9A6C24}](https://github.com/user-attachments/assets/0799a8a2-bcb7-450c-b11b-c87c2bb2da30)

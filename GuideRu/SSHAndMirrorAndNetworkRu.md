@@ -1,12 +1,13 @@
 # === Установка SSH, настройка зеркала, настройка сети ===
-## 1. Настройка сети
-Чтобы мы могли что-либо скачивать или иметь возможность связаться с основной машиной нужно правильно настроить сеть, а именно настроить enp0s3 и enp0s8.
+## 1. Настройка сетевых интерфейсов
+Чтобы мы могли что-либо иметь доступ в интернет или иметь возможность связаться с основной машиной нужно правильно настроить сеть, а именно настроить enp0s3 и enp0s8.
 
-Для начала воспользуемся командой ip a, чтобы посмотреть все сетевые интерфейсы: ![{E7C33FED-00CA-49B7-9885-A0E461EE9884}](https://github.com/user-attachments/assets/181b1c49-5cfa-4478-ae4d-668bc9d60bd4)
+Для начала воспользуемся командой ip a, чтобы посмотреть все сетевые интерфейсы: ![{7683B33E-4EC4-4C31-8991-D25BB1FFEDDD}](https://github.com/user-attachments/assets/b216b7c7-4489-419c-97b3-777a684b823c)
 
-Для настройки интерфейсов нужно воспользоваться "nano /etc/network/interfaces": ![{0A635D53-FC1C-49AC-8B8E-3F22FAC0197A}](https://github.com/user-attachments/assets/69334d1a-ce3e-45fa-8915-95a62858ad6a)
+Для настройки интерфейсов нужно воспользоваться "nano /etc/network/interfaces": ![{EC9DD3C1-0C7B-43A7-97F4-4A4E93987593}](https://github.com/user-attachments/assets/d980de4e-4c49-47c9-a82c-36f8ecdfd1d6)
 
 Изменяем этот файл следующим образом:  
-![{1CD6DDF7-E719-434E-BBDE-34B9EFD19CEC}](https://github.com/user-attachments/assets/cae1c80f-7560-41fc-acf8-7611cfa4d429)
+![{E574894B-EBF2-4F2E-86EC-5C95829E4FA2}](https://github.com/user-attachments/assets/607c85c4-c670-4a7f-854e-a7993f666434)
 
-И перезапускаем сервис после данных изменений командой "systemctl restart networking"
+И перезапускаем сервис после данных изменений командой "systemctl restart networking".
+

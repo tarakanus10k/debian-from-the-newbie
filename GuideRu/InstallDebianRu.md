@@ -17,7 +17,7 @@
 Включаем DHCP сервер и сохраняем изменения.
 
 Переходим в настройки созданой машины и там переходим во вкладку "Network". Делаем следующие настройки: ![{D5235A89-D469-43BB-BA5C-0710B5CADEE2}](https://github.com/user-attachments/assets/22c78c16-90fc-4a89-b8c1-e57cba86fdef)  
-![{7EC4E036-D58B-4175-9B99-CA488C1C275E}](https://github.com/user-attachments/assets/a535cd95-6168-43f3-bdc8-9ab2b4145a8d)
+![{7EC4E036-D58B-4175-9B99-CA488C1C275E}](https://github.com/user-attachments/assets/a535cd95-6168-43f3-bdc8-9ab2b4145a8d)  
 ("Host-Only adapter" нам нужен для того, чтобы основная машина могла иметь возможность подключиться к виртуальной машине и наоборот)
 
 Сохраняем изменения и запускаем машину. Выплывет следующее окно: ![{AD082118-426E-4B5D-86D6-AA31BB9A6C24}](https://github.com/user-attachments/assets/0799a8a2-bcb7-450c-b11b-c87c2bb2da30)

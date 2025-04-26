@@ -90,3 +90,12 @@
 
 Перемонтируем "/var/shm":  
 ![{00E2C381-93F3-4A86-82C4-615C88102F5C}](https://github.com/user-attachments/assets/2220bd75-3a1a-461d-8e6f-1ffce294e8f9)
+
+Проверяем, применились ли изменения:  
+![{AB5DE180-0E0B-48E2-B7EE-5F72F3819952}](https://github.com/user-attachments/assets/b56ef35b-f30f-4826-acb5-744b73bce7a7)
+
+## 6. Проверка корректности конфигурации файловой системы
+с помощью команды `mount -a` проверяем корректность настройки:  
+![{A3CC3090-5883-4756-8083-2800E9E99E5D}](https://github.com/user-attachments/assets/41f82aaf-d45f-4aef-bbf0-4dc89e99e52d)
+
+Так как какой-либо вывод отсутствует, значит все корректно настроено

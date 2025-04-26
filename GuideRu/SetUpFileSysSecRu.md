@@ -86,4 +86,7 @@
 Введем команду `findmnt -kn /dev/shm` для проверки текущей конфигурации:  
 ![{E9C26C60-A0AC-4129-843E-13656D129C9A}](https://github.com/user-attachments/assets/4478fd74-1a2c-4773-9588-b636c724267d)
 
-Так как "/dev/shm" отсутствует в "fstab", то сами его добавим:
+Так как "/dev/shm" отсутствует в "fstab", то сами его добавим: ![{4BC6B66B-E7B7-4E6D-B94A-9CAD9339D2A5}](https://github.com/user-attachments/assets/e2aa8b70-a703-4058-9800-30c5c4545722)
+
+Перемонтируем "/var/shm":  
+![{00E2C381-93F3-4A86-82C4-615C88102F5C}](https://github.com/user-attachments/assets/2220bd75-3a1a-461d-8e6f-1ffce294e8f9)

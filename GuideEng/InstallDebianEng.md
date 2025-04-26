@@ -59,7 +59,8 @@ First, let's create a "/boot" partition. Click on "create new partition", select
 
 Next, select "configure the Logical Volume Manager" and then click "create volume group". We give our group a name: ![{873D5DE8-5840-4B49-98F3-FAEDF3B3C184}](https://github.com/user-attachments/assets/32ecb3d7-eaa1-4a00-a246-2065f0bd180c)
 
-Selecting a device for the group: ![{68648589-9A9B-453C-9536-F2E442E21C70}](https://github.com/user-attachments/assets/3a27fd97-9e32-4456-98a3-b9a104ba43c2 )  
+Selecting a device for the group:  
+![{68648589-9A9B-453C-9536-F2E442E21C70}](https://github.com/user-attachments/assets/3a27fd97-9e32-4456-98a3-b9a104ba43c2 )  
 ![{DA873D96-1271-4FC6-9EB2-38F0E431537B}](https://github.com/user-attachments/assets/3c1a8af0-7536-4961-a4c2-bf32e1a8a89a)
 
 Now we can start creating logical partitions. Click on "create logical volume". We set a name for our section, for example, "vg-home":  

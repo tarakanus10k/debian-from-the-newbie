@@ -91,11 +91,11 @@ Since "/dev/shm" is missing from "fstab", we will add it ourselves: ![{4BC6B66B-
 Remount "/var/shm":  
 ![{00E2C381-93F3-4A86-82C4-615C88102F5C}](https://github.com/user-attachments/assets/2220bd75-3a1a-461d-8e6f-1ffce294e8f9)
 
-Checking if the changes have been applied:
+Checking if the changes have been applied:  
 ![{AB5DE180-0E0B-48E2-B7EE-5F72F3819952}](https://github.com/user-attachments/assets/b56ef35b-f30f-4826-acb5-744b73bce7a7)
 
 ## 6. Checking the correctness of the file system configuration
-using the `mount -a` command, we check the correctness of the configuration:
+using the `mount -a` command, we check the correctness of the configuration:  
 ![{A3CC3090-5883-4756-8083-2800E9E99E5D}](https://github.com/user-attachments/assets/41f82aaf-d45f-4aef-bbf0-4dc89e99e52d)
 
 Since there is no output, it means that everything is configured correctly.

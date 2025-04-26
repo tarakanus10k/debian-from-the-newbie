@@ -75,3 +75,4 @@
 Провериям смонтированы ли эти файловые системы:  
 ![{F79E63E9-EC30-445B-ADCE-664A9EBCD74D}](https://github.com/user-attachments/assets/d0c0a349-38e1-4970-afd7-24c7cb2f0eb6)
 
+Проверим, какие изменения нужно внести в файловые системы: ![{A05DE693-5EF2-4978-9ED3-E2AFC3593ACB}](https://github.com/user-attachments/assets/4e4e02aa-23e0-469f-884d-274a08ffc5cf)

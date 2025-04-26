@@ -13,5 +13,5 @@
 
 Проверим работу NTP:
 - Текущее состояние синхронизации времени:
-- ![{F0A8697E-B3B7-45D6-9F06-18854F94E4FB}](https://github.com/user-attachments/assets/8cc0f5a3-46b8-4912-99e9-729202127454)
+![{F0A8697E-B3B7-45D6-9F06-18854F94E4FB}](https://github.com/user-attachments/assets/8cc0f5a3-46b8-4912-99e9-729202127454)
 - Найдем в журналах "system-timesyncd" сообщение о подключении к NTP серверу time.google.com и успешной синхронизации: ![{746B37CA-4176-4B4F-A593-E4398E46A116}](https://github.com/user-attachments/assets/c3cec868-423c-455c-887d-523c9b580bfe)

@@ -70,3 +70,8 @@
 ![{6C4F9E73-263B-4226-915B-4814CA03CA22}](https://github.com/user-attachments/assets/1d12f719-872e-4350-ba83-c8ee6dd3f326)
 
 Используем команду `mount | grep "/var"`, чтобы проверить, применились ли наши изменения: ![{9946A285-68E5-4978-BEBC-477FF0FF1FD3}](https://github.com/user-attachments/assets/0cf55763-8ab8-44a9-a282-2dfec32d90c7)
+
+## 4. Настройка "/var/tmp" и "/var/log"
+Провериям смонтированы ли эти файловые системы:  
+![{F79E63E9-EC30-445B-ADCE-664A9EBCD74D}](https://github.com/user-attachments/assets/d0c0a349-38e1-4970-afd7-24c7cb2f0eb6)
+

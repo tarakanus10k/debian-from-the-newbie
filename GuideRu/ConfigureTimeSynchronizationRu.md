@@ -1,1 +1,1 @@
-#
+# === Настройка Time Synchronization ===

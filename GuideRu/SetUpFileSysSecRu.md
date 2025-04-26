@@ -21,7 +21,23 @@
 - relatime: Оптимизирует запись времени последнего доступа (atime) к файлам. Вместо постоянного обновления atime (как в strictatime), записывает его только если предыдущее значение старше 24 часов или файл был изменен.
 - Изменение pass с двух на ноль: казывает утилите fsck не проверять раздел /tmp при загрузке.
 
-После всех изменений сохраняем файл и используем уоманду `moint -o remount /tmp` перемонтируем "/tmp", чтобы наши изменения применились: ![{00E07354-89BD-45C7-AF71-F5267F1A0B1F}](https://github.com/user-attachments/assets/e4c49f25-f4ab-49bd-8ad4-6d3b5ac5efe5)
+После всех изменений сохраняем файл и используем уоманду `moint -o remount /tmp` перемонтируем "/tmp", чтобы наши изменения применились:  
+![{00E07354-89BD-45C7-AF71-F5267F1A0B1F}](https://github.com/user-attachments/assets/e4c49f25-f4ab-49bd-8ad4-6d3b5ac5efe5)
 
 Используем команду `mount | grep "/tmp"`, чтобы проверить, применились ли наши изменения: ![{7885D39D-A6B2-450B-8E85-9177D9411644}](https://github.com/user-attachments/assets/626e1872-ac41-46a5-bc95-de6e931e3f17)  
 (Смотрим именно на "/tmp", а не на "/var/tmp")
+
+## 2. Настройка "/home"
+Для начала проверим смонтирован ли ли "/home", как отдельная файловая система с помощью команды `df -h /home`: ![{9570ED85-9D50-4A21-B6CF-097B7E65BE31}](https://github.com/user-attachments/assets/31e873c0-6063-42c9-9f57-ea9e1a9235cc)  
+Так как указан конкретный файловый раздел "/dev/mapper/vg-srv-vg-home", то можно сказать, что наш "/home" смонтирован, как отдельная файловая система.
+
+Теперь с помощью команды `mount | grep "/home"` проверим, что нужно настройть для нашего "/home": ![{63307B5F-6D79-41AD-8A2C-A8D787822349}](https://github.com/user-attachments/assets/071a00a9-d83d-4829-ac42-b53e1a107246)
+
+Возвращаемся в "fstab" и согласно Debian 12 CIS Benchmark изменяем наш "/home": ![{D6332C8D-E0B6-4A94-A9A3-360C8B3AB405}](https://github.com/user-attachments/assets/3d835c58-7ae4-4173-8ac8-1c897ce7371a)
+
+Подробнее пройдемся по изменения "/home":
+
+После всех изменений сохраняем файл и используем уоманду `moint -o remount /home` перемонтируем "/home", чтобы наши изменения применились:  
+![{F9D2B6CD-B63D-4AEF-898A-A7E1EDA538D3}](https://github.com/user-attachments/assets/42ccd9ab-d92a-4c23-ab19-cc96ff46974a)
+
+Используем команду `mount | grep "/home"`, чтобы проверить, применились ли наши изменения: ![{72FFD82E-C6DC-452A-ABBC-AE046A656C5A}](https://github.com/user-attachments/assets/398cc146-43df-4209-8b0e-0073ec91cfbc)

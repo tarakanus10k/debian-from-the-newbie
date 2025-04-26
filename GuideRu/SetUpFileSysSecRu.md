@@ -76,3 +76,5 @@
 ![{F79E63E9-EC30-445B-ADCE-664A9EBCD74D}](https://github.com/user-attachments/assets/d0c0a349-38e1-4970-afd7-24c7cb2f0eb6)
 
 Проверим, какие изменения нужно внести в файловые системы: ![{A05DE693-5EF2-4978-9ED3-E2AFC3593ACB}](https://github.com/user-attachments/assets/4e4e02aa-23e0-469f-884d-274a08ffc5cf)
+
+Возвращаемся в "fstab" и согласно Debian 12 CIS Benchmark изменяем наши "/var/tmp" и "/var/log": ![{2F1DBCB1-4776-4820-BF50-06524D431E58}](https://github.com/user-attachments/assets/64c17c44-f5d9-4295-92b6-9fb7b102422b)

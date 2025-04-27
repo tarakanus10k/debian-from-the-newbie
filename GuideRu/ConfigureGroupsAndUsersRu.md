@@ -20,7 +20,11 @@
 
 Создадим для нового пользователя домашнюю дерикторию:
 ```bash
-mkdir /home/RAMANIUK.VITALI 
-chown RAMANIUK.VITALI /home/RAMANIUK.VITALI 
-chmod 700 /home/RAMANIUK.VITALI
+mkdir /home/viromant
+chown viromant /home/viromant 
+chmod 700 /home/viromant
 ```
+
+Зададим пароль для нового пользователя:  
+![{367266A1-B71F-4B25-98CF-17F720526710}](https://github.com/user-attachments/assets/074f65f9-0c5c-4b5d-999a-3f2e13aaacd1)
+

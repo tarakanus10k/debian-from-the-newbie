@@ -16,3 +16,11 @@
 - /home/viromant: Путь к домашней директории пользователя
 - /bin/bash: Командная оболочка (shell), которая запускается при входе
 
+Добавим нового пользователя в группу "admins". Для этого изменим строку `admins:x:1001:` на `admins:x:1001:viromant`.
+
+Создадим для нового пользователя домашнюю дерикторию:
+```bash
+mkdir /home/RAMANIUK.VITALI 
+chown RAMANIUK.VITALI /home/RAMANIUK.VITALI 
+chmod 700 /home/RAMANIUK.VITALI
+```

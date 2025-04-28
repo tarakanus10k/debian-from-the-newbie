@@ -1,4 +1,4 @@
-# Little-Debian-Guide
+# debian-from-the-newbie
 ## === ENG ===
 - [Install Debian on VirtualBox](/GuideEng/InstallDebianEng.md)
 - [Insstall SSH, configure Mirror, configure Network](/GuideEng/SSHAndMirrorAndNetworkEng.md)

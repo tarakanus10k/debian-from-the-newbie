@@ -5,6 +5,7 @@
 - [Setting up file system security](/GuideEng/SetUpFileSysSecEng.md)
 - [Time synchronization](/GuideEng/ConfigureTimeSynchronizationEng.md)
 - [Configure groups and users](/GuideEng/ConfigureGroupsAndUsersEng.md)
+- [Setting up and working with SSH](/GuideEng/SettingUpWorkingSSHEng.md)
 ### P.S. information in this guide is subject to change
 #
 ## === RU ===
@@ -13,4 +14,5 @@
 - [Настройка безопасности файловой системы](/GuideRu/SetUpFileSysSecRu.md)
 - [Синхронизирование времени](/GuideRu/ConfigureTimeSynchronizationRu.md)
 - [Настройка групп и пользователей](/GuideRu/ConfigureGroupsAndUsersRu.md)
+- [Настройка и работа с SSH](/GuideRu/SettingUpWorkingSSHRu.md)
 ### P.S. информация в этом руководстве может меняться

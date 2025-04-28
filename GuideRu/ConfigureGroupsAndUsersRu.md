@@ -38,3 +38,15 @@ script-runners:x:1002:
 ```bash
 script-runner:x:1002:1002:x:/opt/scripts:/bin/bash
 ```
+
+Добавим нового пользователя в группу "script-runners".
+
+Создадим для нового пользователя домашнюю дерикторию:
+```bash
+mkdir /opt/scripts
+chown script-runner:script-runners /opt/scripts
+chmod 750 /opt/scripts
+```
+
+Зададим пароль для нового пользователя:  
+![{1EF7688C-7736-4690-B8E5-B57D4D960012}](https://github.com/user-attachments/assets/28c330e2-b628-43dd-9ed7-c00de6daf654)

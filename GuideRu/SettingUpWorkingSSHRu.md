@@ -70,3 +70,5 @@ scp [путь до вашего pub ключа] script-runner@192.168.56.100:~/.
 
 Вывод должен быть следующим:  
 ![{EBD7195E-D7E1-47CE-AEAB-C07D6B11EA7E}](https://github.com/user-attachments/assets/295ecbde-1d1e-49fa-9d60-43557fe104ed)
+
+## 3. Проверка подключения

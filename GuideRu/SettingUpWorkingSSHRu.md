@@ -2,7 +2,7 @@
 ## 1. Создание SSH ключа
 Создавать ключи буду на основной машине (windows). Создадим ключ для пользователя "srvadmin" и "script runner" следующими способами:
 
-Для "srvadmin":  
+1) Для "srvadmin":  
 ```powershell
 ssh-keygen -t ed25519 -C "ed25519-srvadmin-key"
 ```
@@ -14,7 +14,15 @@ ssh-keygen -t ed25519 -C "ed25519-srvadmin-key"
 Весь процесс создания ключа будет выглядеть следующим образом:  
 ![{156DA4B4-7BCB-470D-B2DC-B0A2EED1DA37}](https://github.com/user-attachments/assets/67511328-b032-4517-b7db-808eef1e89ac)
 
-Для "script-runner":  
+2) Для "script-runner":  
 ```powershell
 ssh-keygen -t ed25519 -C "ed25519-script-runner-key"
 ```
+
+После вас попросят путь сохранения ключа. По умолчанию ключ сохраниться в ".ssh" папку того пользователя, кто создает ключ.
+
+Далее вас попросят создать фразу-пароль. Вводим ее и наш ключ создан.
+
+Весь процесс создания ключа будет выглядеть следующим образом:  
+![{E3C13B65-7E7E-4079-B775-36AEC2D91084}](https://github.com/user-attachments/assets/9755bd0d-b9f0-40df-969b-6edac80da892)
+

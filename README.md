@@ -6,6 +6,7 @@
 - [Time synchronization](/GuideEng/ConfigureTimeSynchronizationEng.md)
 - [Configure groups and users](/GuideEng/ConfigureGroupsAndUsersEng.md)
 - [Setting up and working with SSH](/GuideEng/SettingUpWorkingSSHEng.md)
+- [Installation and configuration sudo](/GuideEng/InstAndConfSudoEng.md)
 ### P.S. information in this guide is subject to change
 #
 ## === RU ===
@@ -15,4 +16,5 @@
 - [Синхронизирование времени](/GuideRu/ConfigureTimeSynchronizationRu.md)
 - [Настройка групп и пользователей](/GuideRu/ConfigureGroupsAndUsersRu.md)
 - [Настройка и работа с SSH](/GuideRu/SettingUpWorkingSSHRu.md)
+- [Установка и настройка sudo](/GuideRu/InstAndConfSudoRu.md)
 ### P.S. информация в этом руководстве может меняться

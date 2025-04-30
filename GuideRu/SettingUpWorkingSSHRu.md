@@ -92,3 +92,24 @@ ssh -i [путь до вашего ключа] srvadmin@192.168.56.100
 
 ## 3. Выполнение скрипта при подключении
 Сделаем так, чтобы, когда мы подключаемся к "script-runner", то выполнялся скрипт и подключение завершалось.
+
+В домашней дериктории "script-runner" создаем файл "access.bash", открываем его и в нем пишем:  
+```bash
+#!/bin/bash
+echo "[+] Logged at $(date) by $LOGGEDUSER"
+```
+
+Сохраняем и прописываем команду `chmod +x ~/access.bash`, чтобы сделать скрипт исполняемым.
+
+Открываем файл "authorized_keys" и перед строкой, которая там находится, пишем:  
+```bash
+environment="LOGGEDUSER=script-runner",command="~/access.bash"
+```
+
+Теперь попробуем подключиться по SSH:  
+![{BDAD1297-FC59-4A2B-99E7-8F39E3A7EF61}](https://github.com/user-attachments/assets/a66dfb61-c7b1-4426-ab7a-32b84f59b250)
+
+Как видим, что при подключении выполнился скрипт и после выполнения скрипта соединение закрылось. Но мы видим, что после "by" ничего не вывело. Для того, чтобы это исправить, открываем файл "sshd_config" ("/etc/ssh/sshd_config") и там ищем строку "PermitUserEnvironment". Ищем ее и убераем перед ней знак "#" и меняем "no" на "yes". Сохраняем и перезапускаем sshd командой `systemctl restart sshd`.
+
+Теперь попробуем подключиться по SSH:  
+![{B6F873A2-A486-44C2-A48A-86EA0B69DDA6}](https://github.com/user-attachments/assets/ad1a1195-6673-465e-bad4-845b3664de37)

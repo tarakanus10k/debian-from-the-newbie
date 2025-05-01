@@ -79,7 +79,8 @@
 ![{0A2898A0-8B73-42B9-B0E4-1A56713FA6EF}](https://github.com/user-attachments/assets/e382cbaa-5f29-47bd-ad1f-120fd2c89a77)  
 (для каждого раздела выбираем свой "mount point". Для "swap" Выбираем не "XFS", а "swap area")
 
-Итак, в ходе разметки должна получиться следующая картина: ![{96834B88-EC1D-4543-B7B0-07AE32320BC0}](https://github.com/user-attachments/assets/99498ce9-5d6d-42a9-bae4-1c4422acb542)
+Итак, в ходе разметки должна получиться следующая картина:  
+![{96834B88-EC1D-4543-B7B0-07AE32320BC0}](https://github.com/user-attachments/assets/99498ce9-5d6d-42a9-bae4-1c4422acb542)
 
 Тут выбираем "no":  
 ![{5752E85E-DC8F-4EEF-A5A4-A28DFF68497A}](https://github.com/user-attachments/assets/cc7f252c-0c18-422a-9af0-706148ffd53b)

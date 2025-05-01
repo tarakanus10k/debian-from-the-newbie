@@ -72,13 +72,14 @@
 - "vg-opt", 2GB
 - "vg-tmp", 2GB
 
-В итоге должно получиться следующее:  
-![{EC86DA2C-C3BC-49FE-AF3A-EA46ABA70E19}](https://github.com/user-attachments/assets/4c9f79ee-cd2e-4cbe-a417-05af7e40f4fc)
+На этом завершаем настройку "Logical Volume Manager".
 
-Теперь, как для раздела "/boot" настроим для каждого раздела файловую систему (для всех ext4) и точку монтирования (смотрим на название разделов). В итоге должно получиться следующее:  
-![{34315B2E-F6F3-43D1-82CF-8FFBD4155206}](https://github.com/user-attachments/assets/c8ffa21d-5e90-4f79-926b-693f4683b764)
+Далее для каждого раздела проделываем следующее (покажк на примере "home"):
 
-Итак, в ходе разметки должна получиться следующая картина: ![{B0D2F0A4-3C24-4BF0-A3C2-D95EB954A5B1}](https://github.com/user-attachments/assets/445a1052-36f7-48bb-90f9-a8138c286358)
+![{0A2898A0-8B73-42B9-B0E4-1A56713FA6EF}](https://github.com/user-attachments/assets/e382cbaa-5f29-47bd-ad1f-120fd2c89a77)  
+(для каждого раздела выбираем свой "mount point". Для "swap" Выбираем не "XFS", а "swap area")
+
+Итак, в ходе разметки должна получиться следующая картина: ![{96834B88-EC1D-4543-B7B0-07AE32320BC0}](https://github.com/user-attachments/assets/99498ce9-5d6d-42a9-bae4-1c4422acb542)
 
 Тут выбираем "no":  
 ![{5752E85E-DC8F-4EEF-A5A4-A28DFF68497A}](https://github.com/user-attachments/assets/cc7f252c-0c18-422a-9af0-706148ffd53b)

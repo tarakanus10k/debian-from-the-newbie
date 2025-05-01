@@ -1,8 +1,7 @@
 # === Настройка безопасной файловой системы ===
 
 Перед началом воспользуемся `nano /etc/fstab`, так как все настройки будем прописывать в этом файле. Он доджен выолядеть следующим образом:  
-![{156D2D82-AED8-473C-B53C-E1A47EDFAEEF}](https://github.com/user-attachments/assets/49412adc-372a-424d-8d21-2d433d4559b1)  
-(У вас может отсутствовать swap, если вы его не делали)
+![{98B10B01-3A3A-4728-9F5D-6F406D44654C}](https://github.com/user-attachments/assets/b87673bb-66ff-4a7b-be73-1ad9c171d86e)
 
 ## 1. Настройка "/tmp"
 Для начала проверим смонтирован ли ли "/tmp", как отдельная файловая система с помощью команды `df -h /tmp`: ![{C3A52B59-3BDD-4573-8768-8C3C8BC64ECF}](https://github.com/user-attachments/assets/54b0e89d-fb99-4ce4-8fd1-c6ec61a8df4e)  

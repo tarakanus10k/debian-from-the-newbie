@@ -25,9 +25,10 @@
 Указываем путь до нашего iso файла, монтируем и перезапускаем машину.
 
 ## 3. Установка Debian
+### 3.1 Выбор enp0s8
 Выбираем "Graphic Install". Выбираем язык, вашу "локацию" и раскладку клавиатуры.
 
-Далее в "Configuration the network" выбираем enp0s8 (потом объясню почему): ![{230FC1DC-1AA6-442F-888B-CE22A3D2A224}](https://github.com/user-attachments/assets/34d63528-1f79-439b-85dc-fe47b43a85c5)
+Далее в "Configuration the network" выбираем enp0s8: ![{230FC1DC-1AA6-442F-888B-CE22A3D2A224}](https://github.com/user-attachments/assets/34d63528-1f79-439b-85dc-fe47b43a85c5)
 
 Настроим "Configuration the network" следующим образом: ![{CC144728-0981-44A1-A3C2-E1B3C39B9902}](https://github.com/user-attachments/assets/69e9e3bd-b081-45a9-b781-0ca663000284)  
 ![{74E2EF95-0A33-4182-A127-F3682D736CE0}](https://github.com/user-attachments/assets/5d0fb0e7-8738-41c0-9b32-9425ffb43c37)  
@@ -52,10 +53,7 @@
 Создаем новую пустую разметку:  
 ![{42D13A43-545A-4FA2-ADA2-A4D3F64E740D}](https://github.com/user-attachments/assets/c5dc81f1-1dc6-4b5c-91a9-4ea9f451ade5)
 
-Для начала создадим раздел "/boot". Нажимаеи на "create new partition", выделяем место для этого раздела (1 GB), тип раздела выбираем primary, создаем раздел в начале диска. В "mount point" выбираем "/boot" и можем заканчиваь с этим разделом. Должно получиться следующее:  
-![{70E053E8-38EC-4B5D-B779-5B692EF9A35B}](https://github.com/user-attachments/assets/b22f2880-3db0-49d9-b00f-a0c5344b9d35)
-
-Далее выбираеи "configure the Logical Volume Manager" и потом нажимаем "create volume group". Задаем имя нашей группе: ![{873D5DE8-5840-4B49-98F3-FAEDF3B3C184}](https://github.com/user-attachments/assets/32ecb3d7-eaa1-4a00-a246-2065f0bd180c)
+Далее выбираем "configure the Logical Volume Manager" и потом нажимаем "create volume group". Задаем имя нашей группе: ![{873D5DE8-5840-4B49-98F3-FAEDF3B3C184}](https://github.com/user-attachments/assets/32ecb3d7-eaa1-4a00-a246-2065f0bd180c)
 
 Выбираем устройство для группы: ![{68648589-9A9B-453C-9536-F2E442E21C70}](https://github.com/user-attachments/assets/3a27fd97-9e32-4456-98a3-b9a104ba43c2)  
 ![{DA873D96-1271-4FC6-9EB2-38F0E431537B}](https://github.com/user-attachments/assets/3c1a8af0-7536-4961-a4c2-bf32e1a8a89a)
@@ -67,23 +65,27 @@
 
 И такую процедуру проделываем для следующих разделов:
 - "vg-root", 4GB
+- "vg-boot" 1GB
 - "vg-var", 2GB
 - "vg-var-log", 2GB
 - "vg-var-tmp", 2GB
 - "vg-opt", 2GB
 - "vg-tmp", 2GB
 
-В итоге должно получиться следующее:  
-![{EC86DA2C-C3BC-49FE-AF3A-EA46ABA70E19}](https://github.com/user-attachments/assets/4c9f79ee-cd2e-4cbe-a417-05af7e40f4fc)
+На этом завершаем настройку "Logical Volume Manager".
 
-Теперь, как для раздела "/boot" настроим для каждого раздела файловую систему (для всех ext4) и точку монтирования (смотрим на название разделов). В итоге должно получиться следующее:  
-![{34315B2E-F6F3-43D1-82CF-8FFBD4155206}](https://github.com/user-attachments/assets/c8ffa21d-5e90-4f79-926b-693f4683b764)
+Далее для каждого раздела проделываем следующее (покажк на примере "home"):
 
-Итак, в ходе разметки должна получиться следующая картина: ![{B0D2F0A4-3C24-4BF0-A3C2-D95EB954A5B1}](https://github.com/user-attachments/assets/445a1052-36f7-48bb-90f9-a8138c286358)
+![{0A2898A0-8B73-42B9-B0E4-1A56713FA6EF}](https://github.com/user-attachments/assets/e382cbaa-5f29-47bd-ad1f-120fd2c89a77)  
+(для каждого раздела выбираем свой "mount point". Для "swap" Выбираем не "XFS", а "swap area")
+
+Итак, в ходе разметки должна получиться следующая картина:  
+![{96834B88-EC1D-4543-B7B0-07AE32320BC0}](https://github.com/user-attachments/assets/99498ce9-5d6d-42a9-bae4-1c4422acb542)
 
 Тут выбираем "no":  
 ![{5752E85E-DC8F-4EEF-A5A4-A28DFF68497A}](https://github.com/user-attachments/assets/cc7f252c-0c18-422a-9af0-706148ffd53b)
 
-Далее просят выбрать "Network mirror", но пока что мы продолжим без него. И здесь стоит сказать почему я так делаю. вспомним, что мы вместо enp0s3 выбрали enp0s8, делал я так из-за того, что при выборе enp0s3, когда дело доходило до выбора зеркала, ниодно зеркало не хотело загружаться и впринципе я не мог перейти к другим шагам, так как появлялась ошибка, с которой я не знал, как справиться. В итоге я решил попробывать вместо enp0s3 использовать enp0s8. Из-за такого выбора после установки Debian придеться вручную ставить зеркало и скачивать некоторые программы/утилиты, которые можно сказать во аремя установки debian, но это лучше, чем вообще не иметь возможность установить debian.
-
 В пункте "software selection" выбираем "standart system utilities" (другого нам не дано:)). При вопросе "Install the GRUB loader?" отвечаем "yes" и на этом установка подходит к концу.
+
+### 3.2 Выбор enp0s3
+Практически ничем не отличается от пункта 3.1, но при выборе enp0s3 мы сможем поставить зеркало во время установки и нам не придется устанавливать, нужные нам пакеты вручную.

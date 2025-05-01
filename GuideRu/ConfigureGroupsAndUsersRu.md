@@ -28,3 +28,25 @@ chmod 700 /home/viromant
 Зададим пароль для нового пользователя:  
 ![{367266A1-B71F-4B25-98CF-17F720526710}](https://github.com/user-attachments/assets/074f65f9-0c5c-4b5d-999a-3f2e13aaacd1)
 
+# 3. Создание группы "script-runners" и пользователя "script-runner"
+Создадим группу "script-runners" таким же способом, как и группу "admins":
+```bash
+script-runners:x:1002:
+```
+
+Теперь создадим пользователя "script-runner" таким же способом, как и пользователя "viromant", но изменим для нового пользователя домашнюю дерикторию:
+```bash
+script-runner:x:1002:1002:x:/opt/scripts:/bin/bash
+```
+
+Добавим нового пользователя в группу "script-runners".
+
+Создадим для нового пользователя домашнюю дерикторию:
+```bash
+mkdir /opt/scripts
+chown script-runner:script-runners /opt/scripts
+chmod 750 /opt/scripts
+```
+
+Зададим пароль для нового пользователя:  
+![{1EF7688C-7736-4690-B8E5-B57D4D960012}](https://github.com/user-attachments/assets/28c330e2-b628-43dd-9ed7-c00de6daf654)

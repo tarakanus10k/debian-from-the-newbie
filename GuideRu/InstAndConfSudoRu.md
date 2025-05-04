@@ -30,3 +30,11 @@ srvadmin ALL=(ALL:ALL) ALL
 ```
 
 Сохраняем и теперь пользователь "srvadmin" может использователь команду "sudo", но при ее использовании ему нужно будет вводить пароль.
+
+## 3. Настройка sudo для пользователя "appadmin"
+Для начала создадим пользователя "appadmin". Открываем файл "passwd" и прописываем следующее:  
+```bash
+appadmin:x:1003:1001:appadmin:/home/appadmin:/bin/bash
+```
+
+Добавим пользователя "appadmin" в группу "admins" (создание группы "admins" смотреть в [Настройка групп и пользователей](/GuideRu/ConfigureGroupsAndUsersRu.md))

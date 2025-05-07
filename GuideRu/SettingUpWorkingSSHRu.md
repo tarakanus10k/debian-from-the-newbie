@@ -115,4 +115,10 @@ environment="LOGGEDUSER=script-runner",command="~/access.bash"
 ![{B6F873A2-A486-44C2-A48A-86EA0B69DDA6}](https://github.com/user-attachments/assets/ad1a1195-6673-465e-bad4-845b3664de37)
 
 ## 4. Настройка sshd_config
-Сделаем так, чтобы по ssh можно было подключаться только по фразе-паролю и также запретим подключаться руту по ssh.
+Сделаем так, чтобы по ssh можно было подключаться только по фразе-паролю и также запретим подключаться руту по ssh. Для этого откроем "sshd_config", найдем в нем параметры "PasswordAuthentication" и "PermitRootLogin" и напротив этих параметров пишем "no" должно выглядеть следующим образом:  
+```bash
+PasswordAuthentication no
+PermitRootLogin no
+```
+
+Перезапускаем "sshd" и готово.

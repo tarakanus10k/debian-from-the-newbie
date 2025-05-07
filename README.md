@@ -7,6 +7,7 @@
 - [Configure groups and users](/GuideEng/ConfigureGroupsAndUsers.md)
 - [Setting up and working with SSH](/GuideEng/SettingUpWorkingSSH.md)
 - [Installation and configuration sudo](/GuideEng/InstAndConfSudo.md)
+- [Setting up PAM](/GuideEng/SettingUpPAM.md)
 ### P.S. information in this guide is subject to change
 #
 ## === RU ===
@@ -17,4 +18,5 @@
 - [Настройка групп и пользователей](/GuideRu/ConfigureGroupsAndUsers.md)
 - [Настройка и работа с SSH](/GuideRu/SettingUpWorkingSSH.md)
 - [Установка и настройка sudo](/GuideRu/InstAndConfSudo.md)
+- [Настройка PAM](/GuideRu/SettingUpPAM.md)
 ### P.S. информация в этом руководстве может меняться

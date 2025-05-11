@@ -36,6 +36,16 @@ auditctl -a always,exit -F arch=b64 -S execve -F exe=/usr/bin/python3 -k python_
 bash -c "auditctl -l > /etc/audit/rules.d/my-audit-rules.rules"
 ```
 
+Или если вам нужно разместить определенное правило в определенном файле можно воспользоваться командой:  
+```bash
+printf "
+-w -w /etc/passwd -p wa -k soc_passwd_rule
+-w /etc/shadow -p wa -k soc_shadow_rule
+-w /etc/sudoers -p wa -k soc_sudoers_rule
+-w /etc/sudoers.d -p wa -k soc_sudoers_rule
+" 
+```
+
 После выполнения данной команды, файл "my-audit-rules.rules" должен содержать следующее:  
 ```bash
 -w /etc/passwd -p wa -k soc_passwd_rule

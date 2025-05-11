@@ -1,22 +1,24 @@
 # debian-from-the-newbie
 ## === ENG ===
 - [Install Debian on VirtualBox](/GuideEng/InstallDebian.md)
-- [Insstall SSH, configure Mirror, configure Network](/GuideEng/SSHAndMirrorAndNetwork.md)
-- [Setting up file system security](/GuideEng/SetUpFileSysSec.md)
+- [Insstall SSH, configure Mirror, configure Network](/GuideEng/SSHMirrorNetwork.md)
+- [Setting up file system security](/GuideEng/FileSysSec.md)
 - [Time synchronization](/GuideEng/TimeSynchronization.md)
 - [Configure groups and users](/GuideEng/GroupsAndUsers.md)
-- [Setting up and working with SSH](/GuideEng/SettingUpWorkingSSH.md)
-- [Installation and configuration sudo](/GuideEng/InstAndConfSudo.md)
-- [Setting up PAM](/GuideEng/SettingUpPAM.md)
+- [Setting up and working with SSH](/GuideEng/SSH.md)
+- [Installation and configuration sudo](/GuideEng/Sudo.md)
+- [Setting up PAM](/GuideEng/PAM.md)
+- [Install and configure Auditd](/GuideEng/Auditd.md)
 ### P.S. information in this guide is subject to change
 #
 ## === RU ===
 - [Установка Debian на Виртуальную машину](/GuideRu/InstallDebian.md)
-- [Установка SSH, настройка зеркала, настройка сети](/GuideRu/SSHAndMirrorAndNetwork.md)
-- [Настройка безопасности файловой системы](/GuideRu/SetUpFileSysSec.md)
+- [Установка SSH, настройка зеркала, настройка сети](/GuideRu/SSHMirrorNetwork.md)
+- [Настройка безопасности файловой системы](/GuideRu/FileSysSec.md)
 - [Синхронизирование времени](/GuideRu/TimeSynchronization.md)
 - [Настройка групп и пользователей](/GuideRu/GroupsAndUsers.md)
-- [Настройка и работа с SSH](/GuideRu/SettingUpWorkingSSH.md)
-- [Установка и настройка sudo](/GuideRu/InstAndConfSudo.md)
-- [Настройка PAM](/GuideRu/SettingUpPAM.md)
+- [Настройка и работа с SSH](/GuideRu/SSH.md)
+- [Установка и настройка sudo](/GuideRu/Sudo.md)
+- [Настройка PAM](/GuideRu/PAM.md)
+- [Установка и настройка Auditd](/GuideRu/Auditd.md)
 ### P.S. информация в этом руководстве может меняться

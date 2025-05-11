@@ -4,21 +4,19 @@
 
 ## 2. Настройка Auditd
 
-### 2.1 Правило мониторинга файла "/etc/passwd" и "/etc/shadow"
-Создается правило следующим образом:  
+### 2.1 Правило мониторинга файла "/etc/passwd", "/etc/shadow", "/etc/sudoers", "/etc/sudoers.d"
+Создаем правила следующим образом:  
 ```bash
 auditctl -w /etc/passwd -p wa -k soc_passwd_rule
+auditctl -w /etc/shadow -p wa -k soc_shadow_rule
+auditctl -w /etc/sudoers -p wa -k soc_sudoers_rule
+auditctl -w /etc/sudoers.d -p wa -k soc_sudoers_rule
 ```
 
 Разберемся более подробно:
-- -w /etc/passwd: указываем путь до файла для мониторинга.
+- -w: указываем путь до файла для мониторинга.
 - -p wa: указываем права доступа (w - запись, a - изменение атрибутов).
-- -k soc_passwd_rule: задаем ключ для фильтрации логов.
-
-Для "/etc/shadow" правило будет выглядеть аналогично:  
-```bash
-auditctl -w /etc/shadow -p wa -k soc_shadow_rule
-```
+- -k: задаем ключ для фильтрации логов.
 
 ### 2.2 Правило для мониторинга выполнения интерпретатора python
 Создается правило следующим образом:  

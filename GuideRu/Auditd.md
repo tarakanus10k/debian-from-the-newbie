@@ -43,12 +43,15 @@ printf "
 -w /etc/shadow -p wa -k soc_shadow_rule
 -w /etc/sudoers -p wa -k soc_sudoers_rule
 -w /etc/sudoers.d -p wa -k soc_sudoers_rule
-" 
+-a always,exit -F arch=b64 -S execve -F exe=/usr/bin/python3 -k python_exec_rule
+" >> /etc/audit/rules.d/my-audit-rules.rules
 ```
 
 После выполнения данной команды, файл "my-audit-rules.rules" должен содержать следующее:  
 ```bash
--w /etc/passwd -p wa -k soc_passwd_rule
+-w -w /etc/passwd -p wa -k soc_passwd_rule
 -w /etc/shadow -p wa -k soc_shadow_rule
+-w /etc/sudoers -p wa -k soc_sudoers_rule
+-w /etc/sudoers.d -p wa -k soc_sudoers_rule
 -a always,exit -F arch=b64 -S execve -F exe=/usr/bin/python3 -k python_exec_rule
 ```

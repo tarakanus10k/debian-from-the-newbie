@@ -74,10 +74,10 @@ auditctl -w /etc/localtime -p wa -k time-change
 
 Запись по файлам будем производить следующим образом:  
 ```bash
-bash -c 'auditctl -l | head -n 4 > /etc/audit/rules.d/10-file-watch.rules'
-bash -c 'auditctl -l | sed -n 5,6p > /etc/audit/rules.d/20-python-exec.rules'
-bash -c 'auditctl -l | sed -n 7,8p > /etc/audit/rules.d/30-uid-change.rules'
-bash -c 'auditctl -l | tail -n 5 > /etc/audit/rules.d/40-time-change.rules'
+bash -c 'auditctl -l | head -n 4 > /etc/audit/rules.d/file-watch-rules.rules'
+bash -c 'auditctl -l | sed -n 5,6p > /etc/audit/rules.d/python-exec-rules.rules'
+bash -c 'auditctl -l | sed -n 7,8p > /etc/audit/rules.d/uid-change-rules.rules'
+bash -c 'auditctl -l | tail -n 5 > /etc/audit/rules.d/time-change-rules.rules'
 ```
 
 Перезапускаем "auditd" командой `systemctl restart auditd`. Далее повторяем команду `auditctl -l` и если вывод идентичен, то все сделано верно.

@@ -2,12 +2,12 @@
 ## === ENG ===
 - [Install Debian on VirtualBox](/GuideEng/InstallDebian.md)
 - [Hotkeys in tty](/GuideEng/HotkeysTty.md)
-- [Insstall SSH, configure Mirror, configure Network](/GuideEng/SSHMirrorNetwork.md)
+- [Install SSH, configure Mirror, configure Network](/GuideEng/SSHMirrorNetwork.md)
 - [Setting up file system security](/GuideEng/FileSysSec.md)
 - [Time synchronization](/GuideEng/TimeSynchronization.md)
 - [Configure groups and users](/GuideEng/GroupsAndUsers.md)
 - [Setting up and working with SSH](/GuideEng/SSH.md)
-- [Installation and configuration sudo](/GuideEng/Sudo.md)
+- [Install and configure sudo](/GuideEng/Sudo.md)
 - [Setting up PAM](/GuideEng/PAM.md)
 - [Install and configure Auditd](/GuideEng/Auditd.md)
 ### P.S. information in this guide is subject to change

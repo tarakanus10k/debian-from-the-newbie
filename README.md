@@ -1,6 +1,7 @@
 # debian-from-the-newbie
 ## === ENG ===
 - [Install Debian on VirtualBox](/GuideEng/InstallDebian.md)
+- [Hotkeys in tty](/GuideEng/HotkeysTty.md)
 - [Insstall SSH, configure Mirror, configure Network](/GuideEng/SSHMirrorNetwork.md)
 - [Setting up file system security](/GuideEng/FileSysSec.md)
 - [Time synchronization](/GuideEng/TimeSynchronization.md)
@@ -13,6 +14,7 @@
 #
 ## === RU ===
 - [Установка Debian на Виртуальную машину](/GuideRu/InstallDebian.md)
+- [Горячие клавиши в tty](/GuideRu/HotkeysTty.md)
 - [Установка SSH, настройка зеркала, настройка сети](/GuideRu/SSHMirrorNetwork.md)
 - [Настройка безопасности файловой системы](/GuideRu/FileSysSec.md)
 - [Синхронизирование времени](/GuideRu/TimeSynchronization.md)

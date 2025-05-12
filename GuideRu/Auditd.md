@@ -21,12 +21,13 @@ auditctl -w /etc/sudoers.d -p wa -k soc_sudoers_rule
 ### 2.2 Правило для мониторинга выполнения интерпретатора python
 Создается правило следующим образом:  
 ```bash
+auditctl -a always,exit -F arch=b32 -S execve -F exe=/usr/bin/python3 -k python_exec_rule
 auditctl -a always,exit -F arch=b64 -S execve -F exe=/usr/bin/python3 -k python_exec_rule
 ```
 
 Разберемся более подробно:
 - -a always,exit: always - всегда регистрировать событие, exit - ловить завершение системного вызова.
-- -F arch=b64: фильтр для 64-битных систем.
+- -F arch=b32/64: фильтр для 64-битных систем.
 - -S execve: отслеживает вызов "execve()".
 - -F exe=/usr/bin/python3: путь к исполняемому файлу.
 
@@ -35,6 +36,7 @@ auditctl -a always,exit -F arch=b64 -S execve -F exe=/usr/bin/python3 -k python_
 
 Создается правило следующим образом:  
 ```bash
+auditctl -a always,exit -F arch=b32 -C euid!=uid -F auid!=unset -S execve -k user_emul
 auditctl -a always,exit -F arch=b64 -C euid!=uid -F auid!=unset -S execve -k user_emul
 ```
 
@@ -42,28 +44,40 @@ auditctl -a always,exit -F arch=b64 -C euid!=uid -F auid!=unset -S execve -k use
 - -C euid!=uid: фильтровать случаи, когда эффективный UID не равен настоящему UID
 - -F auid!=unset: игнорировать процессы без аудит UID
 
+### 2.4 Правила для мониторинга изменения во времени
+Создаются правила следующим образом:  
+```bash
+auditctl -a always,exit -F arch=b32 -S adjtimex,settimeofday -k time_change 
+auditctl -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time_change 
+auditctl -a always,exit -F arch=b32 -S clock_settime -F a0=0x0 -k time_change 
+auditctl -a always,exit -F arch=b64 -S clock_settime -F a0=0x0 -k time_change 
+auditctl -w /etc/localtime -p wa -k time-change
+```
+
 ## 3. Сохранение правил
-Для сохранения написанных правил воспользуемся командой:  
+Для начала воспользуемся командой `auditctl -l`, чтобы вывести все созданные правила. Вывод должен быть примерно следующим:  
 ```bash
-bash -c "auditctl -l > /etc/audit/rules.d/my-audit-rules.rules"
-```
-
-Или если вам нужно разместить определенное правило в определенном файле можно воспользоваться командой:  
-```bash
-printf "
--w -w /etc/passwd -p wa -k soc_passwd_rule
+-w /etc/passwd -p wa -k soc_passwd_rule
 -w /etc/shadow -p wa -k soc_shadow_rule
 -w /etc/sudoers -p wa -k soc_sudoers_rule
 -w /etc/sudoers.d -p wa -k soc_sudoers_rule
+-a always,exit -F arch=b32 -S execve -F exe=/usr/bin/python3 -k python_exec_rule
 -a always,exit -F arch=b64 -S execve -F exe=/usr/bin/python3 -k python_exec_rule
-" >> /etc/audit/rules.d/my-audit-rules.rules
+-a always,exit -F arch=b32 -C euid!=uid -F auid!=unset -S execve -k user_emul
+-a always,exit -F arch=b64 -C euid!=uid -F auid!=unset -S execve -k user_emul
+-a always,exit -F arch=b32 -S adjtimex,settimeofday -k time_change 
+-a always,exit -F arch=b64 -S adjtimex,settimeofday -k time_change 
+-a always,exit -F arch=b32 -S clock_settime -F a0=0x0 -k time_change 
+-a always,exit -F arch=b64 -S clock_settime -F a0=0x0 -k time_change 
+-w /etc/localtime -p wa -k time-change
 ```
 
-После выполнения данной команды, файл "my-audit-rules.rules" должен содержать следующее:  
+Запись по файлам будем производить следующим образом:  
 ```bash
--w -w /etc/passwd -p wa -k soc_passwd_rule
--w /etc/shadow -p wa -k soc_shadow_rule
--w /etc/sudoers -p wa -k soc_sudoers_rule
--w /etc/sudoers.d -p wa -k soc_sudoers_rule
--a always,exit -F arch=b64 -S execve -F exe=/usr/bin/python3 -k python_exec_rule
+bash -c 'auditctl -l | head -n 4 > /etc/audit/rules.d/10-file-watch.rules'
+bash -c 'auditctl -l | sed -n 5,6p > /etc/audit/rules.d/20-python-exec.rules'
+bash -c 'auditctl -l | sed -n 7,8p > /etc/audit/rules.d/30-uid-change.rules'
+bash -c 'auditctl -l | tail -n 5 > /etc/audit/rules.d/40-time-change.rules'
 ```
+
+Перезапускаем "auditd" командой `systemctl restart auditd`. Далее повторяем команду `auditctl -l` и если вывод идентичен, то все сделано верно.

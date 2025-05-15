@@ -11,6 +11,7 @@
 - [Setting up PAM](/GuideEng/PAM.md)
 - [Install and configure Auditd](/GuideEng/Auditd.md)
 - [Configure AppArmor](/GuideEng/AppArmor.md)
+- [Configure BootLoader](/GuideEng/BootLoader.md)
 ### P.S. information in this guide is subject to change
 #
 ## === RU ===
@@ -25,4 +26,5 @@
 - [Настройка PAM](/GuideRu/PAM.md)
 - [Установка и настройка Auditd](/GuideRu/Auditd.md)
 - [Настройка AppArmor](/GuideRu/AppArmor.md)
+- [Настройка загрузчика](/GuideRu/BootLoader.md)
 ### P.S. информация в этом руководстве может меняться

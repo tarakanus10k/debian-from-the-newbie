@@ -10,6 +10,7 @@
 - [Install and configure sudo](/GuideEng/Sudo.md)
 - [Setting up PAM](/GuideEng/PAM.md)
 - [Install and configure Auditd](/GuideEng/Auditd.md)
+- [Configure AppArmor](/GuideEng/AppArmor.md)
 ### P.S. information in this guide is subject to change
 #
 ## === RU ===
@@ -23,4 +24,5 @@
 - [Установка и настройка sudo](/GuideRu/Sudo.md)
 - [Настройка PAM](/GuideRu/PAM.md)
 - [Установка и настройка Auditd](/GuideRu/Auditd.md)
+- [Настройка AppArmor](/GuideRu/AppArmor.md)
 ### P.S. информация в этом руководстве может меняться

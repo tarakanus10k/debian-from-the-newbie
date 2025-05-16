@@ -12,6 +12,7 @@
 - [Install and configure Auditd](/GuideEng/Auditd.md)
 - [Configure AppArmor](/GuideEng/AppArmor.md)
 - [Configure BootLoader](/GuideEng/BootLoader.md)
+- [Configure SELinux](/GuideEng/SELinux.md)
 ### P.S. information in this guide is subject to change
 #
 ## === RU ===
@@ -27,4 +28,5 @@
 - [Установка и настройка Auditd](/GuideRu/Auditd.md)
 - [Настройка AppArmor](/GuideRu/AppArmor.md)
 - [Настройка загрузчика](/GuideRu/BootLoader.md)
+- [Настройка SELinux](/GuideRu/SELinux.md)
 ### P.S. информация в этом руководстве может меняться

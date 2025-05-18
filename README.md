@@ -14,8 +14,7 @@
 - [~~Configure BootLoader~~](/GuideEng/BootLoader.md)
 - [~~Configure SELinux~~](/GuideEng/SELinux.md)
 - [Configure Additional Process Hardening](/GuideEng/AdditionalProcHardening.md)
-### P.S. information in this guide is subject to change
-#
+
 ## === RU ===
 - [Установка Debian на Виртуальную машину](/GuideRu/InstallDebian.md)
 - [Горячие клавиши в tty](/GuideRu/HotkeysTty.md)
@@ -31,4 +30,3 @@
 - [~~Настройка загрузчика~~](/GuideRu/BootLoader.md)
 - [~~Настройка SELinux~~](/GuideRu/SELinux.md)
 - [Настройка дополнительных укреплений процессов](/GuideRu/AdditionalProcHardening.md)
-### P.S. информация в этом руководстве может меняться

@@ -43,11 +43,11 @@ touch ~/.ssh/authorized_keys
 ```
 
 On the main machine, we prescribe the following:  
-``powershell
+```powershell
 scp [path to your pub key] srvadmin@192.168.56.100 :~/.ssh/authorized_keys
 ```
 
-The output should be as follows:
+The output should be as follows:  
 ![{3D7F1476-8A76-4650-9C80-8C0585EA57C4}](https://github.com/user-attachments/assets/77a4236f-539c-46fd-8c60-9f8d0069692f)
 
 2) For the "script-runner"
@@ -64,7 +64,7 @@ touch ~/.ssh/authorized_keys
 ```
 
 On the main machine, we prescribe the following:  
-``powershell
+```powershell
 scp [path to your pub key] script-runner@192.168.56.100 :~/.ssh/authorized_keys
 ```
 
@@ -79,15 +79,15 @@ The first way. We introduce the following:
 ssh srvadmin@192.168.56.100
 ```
 
-After entering the command, you should be asked for the password of the user "srvadmin" and after entering the correct password, you should be allowed into the shell. It should look like this:
+After entering the command, you should be asked for the password of the user "srvadmin" and after entering the correct password, you should be allowed into the shell. It should look like this:  
 ![{23B57C36-121C-464C-87B4-8FC1C9F442D4}](https://github.com/user-attachments/assets/0c7e7ea6-8d2b-4c5f-aae0-7fdb3ac5d9d3)
 
 The second way. We introduce the following:  
-``powershell
+```powershell
 ssh -i [path to your key] srvadmin@192.168.56.100
-``
+```
 
-After entering the command, you should be asked for the passphrase that we wrote when creating the key, and after entering the passphrase correctly, you should be allowed into the shell. It should look like this:
+After entering the command, you should be asked for the passphrase that we wrote when creating the key, and after entering the passphrase correctly, you should be allowed into the shell. It should look like this:  
 ![{5065D163-39A0-4FB4-9956-F753735C540D}](https://github.com/user-attachments/assets/dbadd810-25b1-4527-9938-6a180ea2f7bf)
 
 ## 3. Script execution on connection
@@ -106,12 +106,12 @@ Open the "authorized_keys" file and write in front of the line that is there:
 environment="LOGGEDUSER=script-runner",command="~/access.bash"
 ```
 
-Now let's try to connect via SSH:
+Now let's try to connect via SSH:  
 ![{BDAD1297-FC59-4A2B-99E7-8F39E3A7EF61}](https://github.com/user-attachments/assets/a66dfb61-c7b1-4426-ab7a-32b84f59b250)
 
 As you can see, the script was executed upon connection and the connection was closed after the script was executed. But we see that after "by" nothing was output. To fix this, open the file "sshd_config" ("/etc/ssh/sshd_config") and look for the string "PermitUserEnvironment". We look for it and remove the "#" sign in front of it and change "no" to "yes". Save and restart sshd with the command `systemctl restart sshd'.
 
-Now let's try to connect via SSH:
+Now let's try to connect via SSH:  
 ![{B6F873A2-A486-44C2-A48A-86EA0B69DDA6}](https://github.com/user-attachments/assets/ad1a1195-6673-465e-bad4-845b3664de37)
 
 ##4. Setting up sshd_config

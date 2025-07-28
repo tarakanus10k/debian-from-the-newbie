@@ -19,7 +19,7 @@ Let's go through the changes in more detail.:
 After the changes, we save and use the `mount -o remount -a` command to apply the changes. After this command, we use the `systemctl daemon-reload` command so that the system uses the new version of the file system.
 
 ## 6. Checking the correctness of the file system configuration  
-using the `mount -a` command, we check the correctness of the configuration:
+using the `mount -a` command, we check the correctness of the configuration:  
 ![{A3CC3090-5883-4756-8083-2800E9E99E5D}](https://github.com/user-attachments/assets/41f82aaf-d45f-4aef-bbf0-4dc89e99e52d)
 
 Since there is no output, it means that everything is configured correctly.

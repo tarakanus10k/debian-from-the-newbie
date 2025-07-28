@@ -24,7 +24,7 @@ Restart "sshd" so that the changes start working.
 
 ## 3. Setting up the pam_time PAM module
 
-For example, we need the user "appadmin" (creating the user "appadmin" [here](/GuideRu/InstAndConfSudo.md)) to be unable to connect via ssh on weekends, and we will use the "pam_time" module for this task. To do this, go to `/etc/pam.d/sshd` and connect the "pam_time" module:  
+For example, we need the user "appadmin" (creating the user "appadmin" [here](/GuideRu/Sudo.md)) to be unable to connect via ssh on weekends, and we will use the "pam_time" module for this task. To do this, go to `/etc/pam.d/sshd` and connect the "pam_time" module:  
 ```bash
 account required pam_time.so
 ```

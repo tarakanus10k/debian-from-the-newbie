@@ -37,7 +37,7 @@ First, let's create an "appadmin" user. Open the "passwd" file and specify the f
 appadmin:x:1003:1001:appadmin:/home/appadmin:/bin/bash
 ```
 
-Let's add the user "appadmin" to the "admins" group (to create the "admins" group, see ["Group and User Settings"](/GuideRu/ConfigureGroupsAndUsers.md)).
+Let's add the user "appadmin" to the "admins" group (to create the "admins" group, see ["Group and User Settings"](/GuideEng/ConfigureGroupsAndUsers.md)).
 
 Create a home directory and set a password for the new user:  
 ```bash

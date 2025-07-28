@@ -14,6 +14,8 @@
 - [~~Configure BootLoader~~](/GuideEng/BootLoader.md)
 - [~~Configure SELinux~~](/GuideEng/SELinux.md)
 - [Configure Additional Process Hardening](/GuideEng/AdditionalProcHardening.md)
+## === Why is it archived? ===
+
 
 ## === RU ===
 - [Установка Debian на Виртуальную машину](/GuideRu/InstallDebian.md)
@@ -30,3 +32,4 @@
 - [~~Настройка загрузчика~~](/GuideRu/BootLoader.md)
 - [~~Настройка SELinux~~](/GuideRu/SELinux.md)
 - [Настройка дополнительных укреплений процессов](/GuideRu/AdditionalProcHardening.md)
+## === Почему заархивирован? ===

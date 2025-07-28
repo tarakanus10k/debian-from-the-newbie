@@ -37,7 +37,7 @@ srvadmin ALL=(ALL:ALL) ALL
 appadmin:x:1003:1001:appadmin:/home/appadmin:/bin/bash
 ```
 
-Добавим пользователя "appadmin" в группу "admins" (создание группы "admins" смотреть в ["Настройка групп и пользователей"](/GuideRu/ConfigureGroupsAndUsers.md)).
+Добавим пользователя "appadmin" в группу "admins" (создание группы "admins" смотреть в ["Настройка групп и пользователей"](/GuideRu/GroupsAndUsers.md)).
 
 Создадим домашнюю директорию и зададим пароль новому пользователю:  
 ```bash

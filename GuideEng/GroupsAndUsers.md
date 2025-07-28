@@ -1,5 +1,5 @@
 # === Setting up groups and users ===
-##1. Creating groups
+## 1. Creating groups
 To create groups, open the "group" file using the `nano /etc/group` command. At the end of the file we write `admins:x:1001:`. Let's go through this entry in more detail.:
 - admins: group name
 - x: password (no password specified)
@@ -30,9 +30,9 @@ Setting the password for the new user:
 
 #3. Creating the "script-runners" group and the "script-runner" user
 Let's create the "script-runners" group in the same way as the "admins" group:
-``bash
+```bash
 script-runners:x:1002:
-``
+```
 
 Now let's create the "script-runner" user in the same way as the "viromant" user, but change the home directory for the new user.:
 ```bash

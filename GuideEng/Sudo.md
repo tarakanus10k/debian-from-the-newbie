@@ -5,7 +5,7 @@ To install sudo, enter the following command:
 apt install sudo
 ```
 
-##2. Configuring sudo for the "viromant" user
+## 2. Configuring sudo for the "viromant" user
 Run the following command:  
 ```bash
 sudo visudo -f /etc/sudoers.d/viromant
@@ -18,7 +18,7 @@ viromant ALL=(ALL:ALL) NOPASSWD:ALL
 
 We save it and now the user "viromant" can use the "sudo" command without entering a password.
 
-##3. Configuring sudo for the "srvadmin" user
+## 3. Configuring sudo for the "srvadmin" user
 Run the following command:  
 ```bash
 sudo visudo -f /etc/sudoers.d/srvadmin
@@ -31,7 +31,7 @@ srvadmin ALL=(ALL:ALL) ALL
 
 We save it and now the user "srvadmin" can use the command "sudo", but when using it he will need to enter a password.
 
-##3. Configuring sudo for the "appadmin" user
+## 3. Configuring sudo for the "appadmin" user
 First, let's create an "appadmin" user. Open the "passwd" file and specify the following:  
 ```bash
 appadmin:x:1003:1001:appadmin:/home/appadmin:/bin/bash

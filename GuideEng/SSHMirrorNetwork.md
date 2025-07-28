@@ -22,4 +22,5 @@ Let's use the command `nano /etc/apt/sources.list` and see that there is only on
 ## 3. Installing SSH
 We need SSH in order, roughly speaking, to remotely manage the server (i.e. to our VM) via ssh. It is worth saying that this protocol provides not just a connection, but a secure connection.
 
-So, to install ssh, use the command `apt install openssh-server -y'. After installation, using the `systemctl ssh status` command, we check the ssh operation: ![{FA26A85E-8A80-46FB-93C4-15C7EB8FC823}](https://github.com/user-attachments/assets/e165c051-ac70-4742-868d-e8543dd9495b)
+So, to install ssh, use the command `apt install openssh-server -y'. After installation, using the `systemctl ssh status` command, we check the ssh operation:  
+![{FA26A85E-8A80-46FB-93C4-15C7EB8FC823}](https://github.com/user-attachments/assets/e165c051-ac70-4742-868d-e8543dd9495b)
